@@ -5,7 +5,7 @@ import { Badge } from '@/src/app/components/ui/Badge';
 
 export default function SubscriptionPage() {
   return (
-    <div className="flex flex-col gap-8 pb-10 max-w-[1200px]">
+    <div className="flex flex-col gap-8 pb-10 max-w-[1440px]">
       
       {/* ================= SECTION 1: CURRENT SUBSCRIPTION ================= */}
       <section className="bg-card border border-border rounded-xl shadow-sm overflow-hidden">

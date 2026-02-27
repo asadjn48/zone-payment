@@ -1,15 +1,25 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import React from 'react';
-import Link from 'next/link';
-import { Input } from '@/src/app/components/ui/Input';
-import { Button } from '@/src/app/components/ui/Button';
-
 import { AddVehicleForm } from '@/src/app/components/AddVehicleForm';
 
-export default function FleetAddVehiclePage() {
-  return <AddVehicleForm cancelHref="/fleet/vehicles" isAdmin={false} />;
+export default function AdminAddVehiclePage() {
+  return <AddVehicleForm cancelHref="/admin/vehicles" isAdmin={true} />;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+// import React from 'react';
+// import Link from 'next/link';
+// import { Input } from '@/src/app/components/ui/Input';
+// import { Button } from '@/src/app/components/ui/Button';
 
 // export default function AddVehiclePage() {
 //   return (
