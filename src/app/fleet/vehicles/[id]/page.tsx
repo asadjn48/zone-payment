@@ -230,7 +230,7 @@ export default function VehicleDetailsPage({ params }: { params: { id: string } 
                 ].map((act, i) => (
                   <div key={i} className="relative">
                     {/* Timeline Dot */}
-                    <div className="absolute -left-[31px] bg-white p-1 rounded-full">
+                    <div className="absolute -left-7.75 bg-white p-1 rounded-full">
                       <div className="w-3 h-3 bg-blue-400 rounded-full border-2 border-white shadow-sm"></div>
                     </div>
                     <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1">

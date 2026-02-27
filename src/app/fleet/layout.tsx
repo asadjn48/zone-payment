@@ -7,13 +7,13 @@ export default function FleetLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div className="min-h-screen bg-[var(--background)]">
+    <div className="min-h-screen bg-background">
       
       {/* Top Navigation Bar (Header)
         Matches the blue bar in your screenshot 
       */}
       <header className="bg-primary text-white h-16 flex items-center px-4 md:px-8 shadow-sm">
-        <div className="flex items-center w-full max-w-[1400px] mx-auto justify-between">
+        <div className="flex items-center w-full max-w-350 mx-auto justify-between">
           
           {/* Left Side: Logo & Title */}
           <div className="flex items-center gap-4">
@@ -58,7 +58,7 @@ export default function FleetLayout({
       {/* Main Dashboard Content 
         The specific page contents (like dashboard/page.tsx) will be injected here
       */}
-      <main className="max-w-[1400px] mx-auto p-4 md:p-8">
+      <main className="max-w-350 mx-auto p-4 md:p-8">
         {children}
       </main>
       

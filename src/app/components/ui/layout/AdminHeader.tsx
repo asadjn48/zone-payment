@@ -18,7 +18,7 @@ export const AdminHeader = () => {
 
   return (
     <header className="bg-primary text-white h-16 flex items-center px-4 md:px-8 shadow-sm">
-      <div className="flex items-center w-full max-w-[1400px] mx-auto justify-between">
+      <div className="flex items-center w-full max-w-350 mx-auto justify-between">
         
         {/* Left Side: Logo & Dynamic Title */}
         <div className="flex items-center gap-4">

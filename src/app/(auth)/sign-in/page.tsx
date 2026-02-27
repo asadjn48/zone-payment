@@ -126,13 +126,13 @@ export default function SignInPage() {
 
   return (
     <div className="min-h-screen flex items-center justify-center sm:p-4">
-      <div className="flex flex-col-reverse md:flex-row w-full max-w-[1000px] bg-card overflow-hidden min-h-screen sm:min-h-[550px]">
+      <div className="flex flex-col-reverse md:flex-row w-full max-w-250 bg-card overflow-hidden min-h-screen sm:min-h-137.5">
         
         {/* Left Side - Form Area */}
         <div className="w-full md:w-1/2 p-6 sm:p-10 md:p-16 flex flex-col justify-center relative">
           <h1 className="text-2xl md:text-[32px] font-bold text-foreground mb-8">Sign In</h1>
           
-          <form className="w-full max-w-[380px]" onSubmit={handleSignIn}>
+          <form className="w-full max-w-95" onSubmit={handleSignIn}>
             <Input 
               id="email"
               type="email" 
@@ -161,7 +161,7 @@ export default function SignInPage() {
           </form>
           
           {/* Footer Links */}
-          <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between text-sm w-full max-w-[380px] gap-4 sm:gap-0">
+          <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center justify-between text-sm w-full max-w-95 gap-4 sm:gap-0">
             <Link href="/forgot-password" className="text-gray-400 hover:text-gray-600 transition-colors">
               Forget Password?
             </Link>
@@ -175,7 +175,7 @@ export default function SignInPage() {
         </div>
 
         {/* Right Side - Image Area */}
-        <div className="w-full h-[250px] sm:h-[300px] md:h-auto md:w-1/2 relative bg-primary flex-shrink-0">
+        <div className="w-full h-62.5 sm:h-75 md:h-auto md:w-1/2 relative bg-primary shrink-0">
           <Image
             src="/login.png" 
             alt="Welcome Background"

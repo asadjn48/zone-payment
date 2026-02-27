@@ -5,7 +5,7 @@ import { Badge } from '@/src/app/components/ui/Badge';
 
 export default function SubscriptionPage() {
   return (
-    <div className="flex flex-col gap-8 pb-10 max-w-[1440px]">
+    <div className="flex flex-col gap-8 pb-10 max-w-360">
       
       {/* ================= SECTION 1: CURRENT SUBSCRIPTION ================= */}
       <section className="bg-card border border-border rounded-xl shadow-sm overflow-hidden">
@@ -69,7 +69,7 @@ export default function SubscriptionPage() {
               <h3 className="font-bold text-lg text-foreground">Basic</h3>
               <span className="text-sm font-medium text-gray-500">Free</span>
             </div>
-            <ul className="text-sm text-gray-600 space-y-3 mb-6 flex-grow">
+            <ul className="text-sm text-gray-600 space-y-3 mb-6 grow">
               <li className="flex items-start gap-2">• 1 event/month per zone type</li>
               <li className="flex items-start gap-2">• Manual payments only</li>
               <li className="flex items-start gap-2">• No wallet</li>
@@ -82,7 +82,7 @@ export default function SubscriptionPage() {
               <h3 className="font-bold text-lg text-foreground">Manual</h3>
               <span className="text-sm font-medium text-gray-500">£1.99/mo</span>
             </div>
-            <ul className="text-sm text-gray-600 space-y-3 mb-6 flex-grow">
+            <ul className="text-sm text-gray-600 space-y-3 mb-6 grow">
               <li className="flex items-start gap-2">• Unlimited events</li>
               <li className="flex items-start gap-2">• Manual payments</li>
               <li className="flex items-start gap-2">• No wallet</li>
@@ -98,7 +98,7 @@ export default function SubscriptionPage() {
             <div className="mb-4">
               <span className="bg-primary text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wide">RECOMMENDED</span>
             </div>
-            <ul className="text-sm text-gray-700 space-y-3 mb-6 flex-grow">
+            <ul className="text-sm text-gray-700 space-y-3 mb-6 grow">
               <li className="flex items-center gap-2">
                 <svg className="text-primary shrink-0" width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                 Unlimited events
