@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 
 // This handles the SEO and browser tab text
 export const metadata: Metadata = {
-  title: 'Fines Fleet | Fleet Management',
+  title: 'Fine Web App  | Car Management',
   description: 'Manage your fleet vehicles and automated zone payments seamlessly.',
 };
 

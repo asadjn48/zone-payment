@@ -9,7 +9,7 @@ export default function AdminLayout({
   return (
     <div className="min-h-screen bg-background">
       <AdminHeader />
-      <main className="max-w-350 mx-auto p-4 md:p-8">
+      <main className="max-w-7xl mx-auto p-4 md:p-8">
         {children}
       </main>
     </div>
