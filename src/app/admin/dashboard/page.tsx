@@ -1,8 +1,8 @@
 
 
+
 // import React from 'react';
 // import Link from 'next/link';
-// import { Badge } from '@/src/app/components/ui/Badge';
 
 // export default function AdminDashboard() {
 //   return (
@@ -105,83 +105,7 @@
 //         </div>
 //       </div>
 
-//       {/* ================= AUTO-PAY PENDING (Live Operational Queue) ================= */}
-//       {/* <div>
-//         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-4 mb-4">
-//           <h2 className="text-lg font-bold text-foreground">Auto-Pay Pending</h2>
-//           <div className="flex items-center gap-3 text-sm">
-//             <span className="text-gray-500">Ready to process: <span className="font-bold text-primary bg-blue-50 px-1.5 py-0.5 rounded">18</span></span>
-//             <span className="text-gray-500">Waiting for top-up: <span className="font-bold text-primary bg-blue-50 px-1.5 py-0.5 rounded">10</span></span>
-//             <span className="text-gray-500">Expiring soon: <span className="font-bold text-primary bg-blue-50 px-1.5 py-0.5 rounded">8</span></span>
-//             <Link href="/admin/payments/autopay-pending" className="text-primary hover:underline font-medium ml-2">View All &gt;</Link>
-//           </div>
-//         </div>
-        
-//         <div className="bg-card border border-border rounded-xl shadow-sm overflow-hidden">
-//           <div className="overflow-x-auto">
-//             <table className="w-full text-left text-sm whitespace-nowrap">
-//               <thead className="bg-gray-50/50 text-gray-500 font-medium border-b border-border">
-//                 <tr>
-//                   <th className="px-6 py-4">License Plate</th>
-//                   <th className="px-6 py-4">Provider</th>
-//                   <th className="px-6 py-4">Fine Amount</th>
-//                   <th className="px-6 py-4">Wallet Balance</th>
-//                   <th className="px-6 py-4">Due</th>
-//                   <th className="px-6 py-4">Balance Status</th>
-//                   <th className="px-6 py-4 text-right">Action</th>
-//                 </tr>
-//               </thead>
-//               <tbody className="divide-y divide-border">
-//                 {[
-//                   { reg: 'ABC 2224', provider: 'Manchester Airport', fine: '£22.00', balance: '£22.00', due: '£15.00', status: 'Sufficient' },
-//                   { reg: 'GIM 2346', provider: 'London ULEZ', fine: '£6.00', balance: '£12.50', due: '£12.50', status: 'Insufficient' },
-//                   { reg: 'LMN-6901', provider: 'Birmingham CAZ', fine: '£3.00', balance: '£3.00', due: '£3.00', status: 'Sufficient' },
-//                   { reg: 'EFG 1035', provider: 'Heathrow Parking', fine: '£8.00', balance: '£12.50', due: '£12.50', status: 'Insufficient' },
-//                 ].map((item, i) => (
-//                   <tr key={i} className="hover:bg-gray-50/50 transition-colors">
-//                     <td className="px-6 py-4 font-semibold text-foreground">{item.reg}</td>
-//                     <td className="px-6 py-4 text-gray-600 flex items-center gap-2">
-//                       <div className="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center text-primary shrink-0">
-//                         <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
-//                       </div>
-//                       {item.provider}
-//                     </td>
-//                     <td className="px-6 py-4 font-medium text-foreground">{item.fine}</td>
-//                     <td className="px-6 py-4 font-medium text-foreground">{item.balance}</td>
-//                     <td className="px-6 py-4 font-medium text-foreground">{item.due}</td>
-//                     <td className="px-6 py-4">
-//                       <span className={`px-2 py-1 rounded text-xs font-medium border ${item.status === 'Sufficient' ? 'bg-green-50 text-green-700 border-green-200' : 'bg-red-50 text-red-700 border-red-200'}`}>
-//                         {item.status}
-//                       </span>
-//                     </td>
-//                     <td className="px-6 py-4 text-right">
-//                       {item.status === 'Sufficient' ? (
-//                         <button className="px-3 py-1.5 bg-green-600 hover:bg-green-700 text-white text-xs font-bold rounded shadow-sm transition-colors">Process</button>
-//                       ) : (
-//                         <button className="px-3 py-1.5 bg-red-100 hover:bg-red-200 text-red-700 text-xs font-bold rounded transition-colors">Notify</button>
-//                       )}
-//                     </td>
-//                   </tr>
-//                 ))}
-//               </tbody>
-//             </table>
-//           </div>
-//         </div>
-//       </div> */}
-
-
-
-
-
-
-
-
-
-
-
-
-
-//           {/* ================= AUTO-PAY PENDING (Live Operational Queue) ================= */}
+//      {/* ================= AUTO-PAY PENDING (Live Operational Queue) ================= */}
 //       <div>
 //         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-4 mb-4">
 //           <h2 className="text-lg font-bold text-foreground">Auto-Pay Pending</h2>
@@ -208,10 +132,10 @@
 //               </thead>
 //               <tbody className="divide-y divide-border">
 //                 {[
-//                   { reg: 'ABC 2224', provider: 'Manchester Airport', charge: '£22.00', balance: '£22.00', status: 'Sufficient' },
-//                   { reg: 'GIM 2346', provider: 'London ULEZ', charge: '£12.50', balance: '£6.00', status: 'Insufficient' },
-//                   { reg: 'LMN-6901', provider: 'Birmingham CAZ', charge: '£3.00', balance: '£3.00', status: 'Sufficient' },
-//                   { reg: 'EFG 1035', provider: 'Heathrow Parking', charge: '£12.50', balance: '£8.00', status: 'Insufficient' },
+//                   { id: 'AP-1023', reg: 'ABC 2224', provider: 'Manchester Airport', charge: '£22.00', balance: '£22.00', status: 'Sufficient' },
+//                   { id: 'AP-1024', reg: 'GIM 2346', provider: 'London ULEZ', charge: '£12.50', balance: '£6.00', status: 'Insufficient' },
+//                   { id: 'AP-1025', reg: 'LMN-6901', provider: 'Birmingham CAZ', charge: '£3.00', balance: '£3.00', status: 'Sufficient' },
+//                   { id: 'AP-1026', reg: 'EFG 1035', provider: 'Heathrow Parking', charge: '£12.50', balance: '£8.00', status: 'Insufficient' },
 //                 ].map((item, i) => (
 //                   <tr key={i} className="hover:bg-gray-50/50 transition-colors">
 //                     <td className="px-6 py-4 font-semibold text-foreground">{item.reg}</td>
@@ -230,7 +154,12 @@
 //                     </td>
 //                     <td className="px-6 py-4 text-right">
 //                       {item.status === 'Sufficient' ? (
-//                         <button className="px-3 py-1.5 bg-green-600 hover:bg-green-700 text-white text-xs font-bold rounded shadow-sm transition-colors">Process</button>
+//                         <Link 
+//                           href={`/admin/payments/autopay-pending/${item.id}`}
+//                           className="px-3 py-1.5 inline-block bg-green-600 hover:bg-green-700 text-white text-xs font-bold rounded shadow-sm transition-colors"
+//                         >
+//                           Process
+//                         </Link>
 //                       ) : (
 //                         <button className="px-3 py-1.5 bg-red-100 hover:bg-red-200 text-red-700 text-xs font-bold rounded transition-colors">Notify</button>
 //                       )}
@@ -243,18 +172,10 @@
 //         </div>
 //       </div>
 
-
-
-
-
-
-
-
-
 //       {/* ================= QUICK ACTIONS ================= */}
 //       <div>
 //         <h2 className="text-lg font-bold text-foreground mb-4">Quick Actions</h2>
-//         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+//         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-7xl">
           
 //           <Link href="/admin/users" className="bg-card border border-border rounded-xl p-5 shadow-sm hover:border-primary group transition-colors flex items-center gap-4">
 //             <div className="text-gray-400 group-hover:text-primary transition-colors">
@@ -273,16 +194,6 @@
 //             <div>
 //               <h4 className="font-semibold text-sm text-foreground">Manage Fleets</h4>
 //               <p className="text-xs text-gray-500 mt-0.5">View fleet organizations</p>
-//             </div>
-//           </Link>
-
-//           <Link href="/admin/vehicles" className="bg-card border border-border rounded-xl p-5 shadow-sm hover:border-primary group transition-colors flex items-center gap-4">
-//             <div className="text-gray-400 group-hover:text-primary transition-colors">
-//               <svg width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path d="M19 17h2c.6 0 1-.4 1-1v-3c0-.9-.7-1.7-1.5-1.9C18.7 10.6 16 10 16 10s-1.3-1.4-2.2-2.3c-.5-.4-1.1-.7-1.8-.7H5c-.6 0-1.1.4-1.4.9l-1.4 2.9A3.7 3.7 0 0 0 2 12v4c0 .6.4 1 1 1h2"/><circle cx="7" cy="17" r="2"/><path d="M9 17h6"/><circle cx="17" cy="17" r="2"/></svg>
-//             </div>
-//             <div>
-//               <h4 className="font-semibold text-sm text-foreground">View Vehicles</h4>
-//               <p className="text-xs text-gray-500 mt-0.5">Monitor registered vehicles</p>
 //             </div>
 //           </Link>
 
@@ -312,12 +223,32 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+"use client";
+
 import React from 'react';
 import Link from 'next/link';
+import { useToast } from '@/src/app/components/ui/useToast';
 
 export default function AdminDashboard() {
+  const { showToast, ToastComponent } = useToast();
+
+  const handleNotify = (reg: string, provider: string) => {
+    showToast(`Top-up reminder sent to the driver of ${reg} for ${provider}.`, 'info');
+  };
+
   return (
-    <div className="flex flex-col gap-8 pb-10 mt-4 max-w-7xl">
+    <div className="flex flex-col gap-8 pb-10 mt-4 max-w-7xl relative">
       
       {/* ================= DATE FILTER ================= */}
       <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 bg-white p-4 rounded-xl border border-border shadow-sm">
@@ -416,7 +347,7 @@ export default function AdminDashboard() {
         </div>
       </div>
 
-      {/* ================= AUTO-PAY PENDING (Live Operational Queue) ================= */}
+     {/* ================= AUTO-PAY PENDING ================= */}
       <div>
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-end gap-4 mb-4">
           <h2 className="text-lg font-bold text-foreground">Auto-Pay Pending</h2>
@@ -443,10 +374,10 @@ export default function AdminDashboard() {
               </thead>
               <tbody className="divide-y divide-border">
                 {[
-                  { reg: 'ABC 2224', provider: 'Manchester Airport', charge: '£22.00', balance: '£22.00', status: 'Sufficient' },
-                  { reg: 'GIM 2346', provider: 'London ULEZ', charge: '£12.50', balance: '£6.00', status: 'Insufficient' },
-                  { reg: 'LMN-6901', provider: 'Birmingham CAZ', charge: '£3.00', balance: '£3.00', status: 'Sufficient' },
-                  { reg: 'EFG 1035', provider: 'Heathrow Parking', charge: '£12.50', balance: '£8.00', status: 'Insufficient' },
+                  { id: 'AP-1023', reg: 'ABC 2224', provider: 'Manchester Airport', charge: '£22.00', balance: '£22.00', status: 'Sufficient' },
+                  { id: 'AP-1024', reg: 'GIM 2346', provider: 'London ULEZ', charge: '£12.50', balance: '£6.00', status: 'Insufficient' },
+                  { id: 'AP-1025', reg: 'LMN-6901', provider: 'Birmingham CAZ', charge: '£3.00', balance: '£3.00', status: 'Sufficient' },
+                  { id: 'AP-1026', reg: 'EFG 1035', provider: 'Heathrow Parking', charge: '£12.50', balance: '£8.00', status: 'Insufficient' },
                 ].map((item, i) => (
                   <tr key={i} className="hover:bg-gray-50/50 transition-colors">
                     <td className="px-6 py-4 font-semibold text-foreground">{item.reg}</td>
@@ -465,9 +396,19 @@ export default function AdminDashboard() {
                     </td>
                     <td className="px-6 py-4 text-right">
                       {item.status === 'Sufficient' ? (
-                        <button className="px-3 py-1.5 bg-green-600 hover:bg-green-700 text-white text-xs font-bold rounded shadow-sm transition-colors">Process</button>
+                        <Link 
+                          href={`/admin/payments/autopay-pending/${item.id}`}
+                          className="px-3 py-1.5 inline-block bg-green-600 hover:bg-green-700 text-white text-xs font-bold rounded shadow-sm transition-colors"
+                        >
+                          Process
+                        </Link>
                       ) : (
-                        <button className="px-3 py-1.5 bg-red-100 hover:bg-red-200 text-red-700 text-xs font-bold rounded transition-colors">Notify</button>
+                        <button 
+                          onClick={() => handleNotify(item.reg, item.provider)}
+                          className="px-3 py-1.5 bg-red-100 hover:bg-red-200 text-red-700 text-xs font-bold rounded transition-colors"
+                        >
+                          Notify
+                        </button>
                       )}
                     </td>
                   </tr>
@@ -481,7 +422,7 @@ export default function AdminDashboard() {
       {/* ================= QUICK ACTIONS ================= */}
       <div>
         <h2 className="text-lg font-bold text-foreground mb-4">Quick Actions</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-7xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           
           <Link href="/admin/users" className="bg-card border border-border rounded-xl p-5 shadow-sm hover:border-primary group transition-colors flex items-center gap-4">
             <div className="text-gray-400 group-hover:text-primary transition-colors">
@@ -506,6 +447,7 @@ export default function AdminDashboard() {
         </div>
       </div>
 
+      <ToastComponent />
     </div>
   );
 }

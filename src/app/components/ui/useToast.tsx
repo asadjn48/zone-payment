@@ -25,8 +25,8 @@ export function useToast() {
                     'bg-blue-50 border-blue-200 text-blue-800';
 
     return (
-      <div className="fixed  bottom-6 right-6 z-50 animate-in slide-in-from-bottom-5 fade-in duration-300">
-        <div className={`flex items-center gap-3 px-6 py-4 rounded-lg shadow-lg border ${bgClass}`}>
+      <div className="fixed top-10 left-1/2 -translate-x-1/2 z-100 animate-in slide-in-from-top-5 fade-in duration-300 shadow-xl rounded-lg">
+        <div className={`flex items-center gap-3 px-6 py-4 rounded-lg border ${bgClass}`}>
           {isSuccess ? (
             <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2"><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
           ) : isError ? (
