@@ -184,17 +184,17 @@ export default function AdminUsersPage() {
   const [statusFilter, setStatusFilter] = useState('All Statuses');
   const [dateFilter, setDateFilter] = useState('All Time');
 
-  // Updated Data: Hardcoded to 1 vehicle, and statuses are only Active or Inactive
+  //Mock data
   const initialUsers = [
-    { id: 'usr-1', name: 'Sarah Miller', email: 's.miller@example.com', phone: '+447781233567', tier: 'Manual', balance: 'N/A', vehicles: 1, status: 'Active' },
-    { id: 'usr-2', name: 'James Wilson', email: 'j.wilson@example.com', phone: '+447781233457', tier: 'Manual', balance: 'N/A', vehicles: 1, status: 'Active' },
-    { id: 'usr-3', name: 'Emma Rogers', email: 'e.rogers@example.com', phone: '+447781233567', tier: 'Manual', balance: 'N/A', vehicles: 1, status: 'Active' },
-    { id: 'usr-4', name: 'Paul Johnson', email: 'p.johnson@example.com', phone: '+447781233494', tier: 'Basic', balance: 'N/A', vehicles: 1, status: 'Active' },
-    { id: 'usr-5', name: 'Laura Smith', email: 'l.smith@example.com', phone: '+447781233567', tier: 'Manual', balance: 'N/A', vehicles: 1, status: 'Active' },
-    { id: 'usr-6', name: 'Nathan Cooper', email: 'n.cooper@example.com', phone: '+447781233457', tier: 'Auto-Pay', balance: '£50.00', vehicles: 1, status: 'Active' },
-    { id: 'usr-7', name: 'Thomas Ward', email: 't.ward@example.com', phone: '+447781233457', tier: 'Basic', balance: 'N/A', vehicles: 1, status: 'Inactive' },
-    { id: 'usr-8', name: 'Emily Clarke', email: 'e.clarke@example.com', phone: '+447781233888', tier: 'Auto-Pay', balance: '£-12.50', vehicles: 1, status: 'Inactive' },
-  ];
+  { id: 'usr-1', name: 'Sarah Miller', email: 's.miller@example.com', phone: '+44 7781 233 567', tier: 'Manual', balance: 'N/A', vehicles: 1, status: 'Active' },
+  { id: 'usr-2', name: 'James Wilson', email: 'j.wilson@example.com', phone: '+44 7781 233 457', tier: 'Manual', balance: 'N/A', vehicles: 1, status: 'Active' },
+  { id: 'usr-3', name: 'Emma Rogers', email: 'e.rogers@example.com', phone: '+44 7781 233 567', tier: 'Auto-Pay', balance: '£15.00', vehicles: 1, status: 'Active' },
+  { id: 'usr-4', name: 'Paul Johnson', email: 'p.johnson@example.com', phone: '+44 7781 233 494', tier: 'Basic', balance: 'N/A', vehicles: 1, status: 'Active' },
+  { id: 'usr-5', name: 'Laura Smith', email: 'l.smith@example.com', phone: '+44 7781 233 567', tier: 'Manual', balance: 'N/A', vehicles: 1, status: 'Active' },
+  { id: 'usr-6', name: 'Nathan Cooper', email: 'n.cooper@example.com', phone: '+44 7781 233 457', tier: 'Auto-Pay', balance: '£50.00', vehicles: 1, status: 'Active' },
+  { id: 'usr-7', name: 'Thomas Ward', email: 't.ward@example.com', phone: '+44 7781 233 457', tier: 'Basic', balance: 'N/A', vehicles: 1, status: 'Inactive' },
+  { id: 'usr-8', name: 'Emily Clarke', email: 'e.clarke@example.com', phone: '+44 7781 233 888', tier: 'Auto-Pay', balance: '£-12.50', vehicles: 1, status: 'Inactive' },
+];
 
   const filteredUsers = useMemo(() => {
     return initialUsers.filter(user => {

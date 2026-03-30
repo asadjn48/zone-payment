@@ -9,17 +9,54 @@ import { SearchBar } from '@/src/app/components/ui/SearchBar';
 import { useToast } from '@/src/app/components/ui/useToast';
 
 const initialQueue = [
-  { id: 'AP-1023', reg: 'ABC 1234', provider: 'Manchester Airport', charge: 15.00, balance: 25.00, status: 'Sufficient' },
-  { id: 'AP-1024', reg: 'GHI 2345', provider: 'London ULEZ', charge: 12.50, balance: 5.00, status: 'Insufficient' },
-  { id: 'AP-1025', reg: 'LMN 8901', provider: 'Birmingham CAZ', charge: 3.00, balance: 10.00, status: 'Sufficient' },
-  { id: 'AP-1026', reg: 'S72 6678', provider: 'Heathrow Parking', charge: 10.00, balance: 0.00, status: 'Insufficient' },
-  { id: 'AP-1027', reg: 'DEF 3344', provider: 'London ULEZ', charge: 25.00, balance: 12.50, status: 'Insufficient' },
+  // { id: 'AP-1023', reg: 'ABC 1234', provider: 'Manchester Airport', charge: 15.00, balance: 25.00, status: 'Sufficient' },
+  // { id: 'AP-1024', reg: 'GHI 2345', provider: 'London ULEZ', charge: 12.50, balance: 5.00, status: 'Insufficient' },
+  // { id: 'AP-1025', reg: 'LMN 8901', provider: 'Birmingham CAZ', charge: 3.00, balance: 10.00, status: 'Sufficient' },
+  // { id: 'AP-1026', reg: 'S72 6678', provider: 'Heathrow Parking', charge: 10.00, balance: 0.00, status: 'Insufficient' },
+  // { id: 'AP-1027', reg: 'DEF 3344', provider: 'London ULEZ', charge: 25.00, balance: 12.50, status: 'Insufficient' },
   { id: 'AP-1028', reg: 'ABC 9991', provider: 'Manchester Airport', charge: 25.00, balance: 50.00, status: 'Sufficient' },
-  { id: 'AP-1029', reg: 'LSFA 9991', provider: 'Bristol Airport', charge: 19.00, balance: 10.00, status: 'Insufficient' },
   { id: 'AP-1030', reg: 'ABC 9782', provider: 'Glasgow CAZ', charge: 8.00, balance: 5.00, status: 'Insufficient' },
 ];
 
-const AutoPayTableRow = ({ item, onNotify }: any) => (
+// const AutoPayTableRow = ({ item, onNotify }: any) => (
+//   <tr className="hover:bg-gray-50/50 transition-colors text-gray-600">
+//     <td className="px-6 py-4 text-gray-500 font-mono text-xs">{item.id}</td>
+//     <td className="px-6 py-4 font-bold text-foreground">
+//       <Link href={`/admin/vehicles/${item.reg.replace(/\s+/g, '')}`} className="hover:text-primary hover:underline">{item.reg}</Link>
+//     </td>
+//     <td className="px-6 py-4">{item.provider}</td>
+//     <td className="px-6 py-4 font-medium text-foreground">£{item.charge.toFixed(2)}</td>
+//     <td className="px-6 py-4 font-medium text-foreground">£{item.balance.toFixed(2)}</td>
+//     <td className="px-6 py-4">
+//       <span className={`px-3 py-1 rounded text-xs font-bold ${item.status === 'Sufficient' ? 'bg-emerald-100 text-emerald-800' : 'bg-red-100 text-red-800'}`}>
+//         {item.status}
+//       </span>
+//     </td>
+//     <td className="px-6 py-4 text-right">
+//       {item.status === 'Sufficient' ? (
+//         /* THIS IS THE FIX: It is now a Link that opens the new page, not a button! */
+//         <Link 
+//           href={`/admin/payments/autopay-pending/${item.id}`}
+//           className="px-4 py-2 inline-block bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold rounded shadow-sm transition-colors"
+//         >
+//           Process
+//         </Link>
+//       ) : (
+//         <button onClick={() => onNotify(item.reg, item.provider)} className="px-4 py-2 bg-red-100 hover:bg-red-200 text-red-800 text-xs font-bold rounded transition-colors">Notify</button>
+//       )}
+//     </td>
+//   </tr>
+// );
+
+
+
+
+
+
+
+
+
+const AutoPayTableRow = ({ item }: any) => (
   <tr className="hover:bg-gray-50/50 transition-colors text-gray-600">
     <td className="px-6 py-4 text-gray-500 font-mono text-xs">{item.id}</td>
     <td className="px-6 py-4 font-bold text-foreground">
@@ -35,19 +72,32 @@ const AutoPayTableRow = ({ item, onNotify }: any) => (
     </td>
     <td className="px-6 py-4 text-right">
       {item.status === 'Sufficient' ? (
-        /* THIS IS THE FIX: It is now a Link that opens the new page, not a button! */
-        <Link 
-          href={`/admin/payments/autopay-pending/${item.id}`}
-          className="px-4 py-2 inline-block bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold rounded shadow-sm transition-colors"
-        >
+        <Link href={`/admin/payments/autopay-pending/${item.id}`} className="px-4 py-2 inline-block bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold rounded shadow-sm transition-colors">
           Process
         </Link>
       ) : (
-        <button onClick={() => onNotify(item.reg, item.provider)} className="px-4 py-2 bg-red-100 hover:bg-red-200 text-red-800 text-xs font-bold rounded transition-colors">Notify</button>
+        <Link href={`/admin/payments/autopay-pending/${item.id}`} className="px-4 py-2 inline-block bg-red-100 hover:bg-red-200 text-red-800 text-xs font-bold rounded transition-colors">
+          Notify
+        </Link>
       )}
     </td>
   </tr>
 );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 export default function AutoPayPendingPage() {
   const [searchTerm, setSearchTerm] = useState('');
